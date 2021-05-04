@@ -1,0 +1,19 @@
+.drawing-cards {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ grid-gap: 16px;
+}
+
+.drawing-card > img {
+  width: 100%;
+  height: 100%;
+}
+
+.left {
+  margin-right: 32px;
+}
+
+
+
+
+

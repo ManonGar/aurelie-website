@@ -1,5 +1,24 @@
-<ul>
-<% @themes.each do |theme| %>
-  <li><%= link_to theme.name, theme_path(theme) %> </li>
-<% end %>
-</ul>
+<div class="theme-cards">
+  <% @themes.each do |theme| %>
+    <div class="theme-card">
+      <div class="card-image">
+        <%= link_to (cl_image_tag theme.photo.key), theme_path(theme) %>
+      </div>
+      <div class="card-title">
+         <%= theme.name.upcase %>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
