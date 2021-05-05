@@ -2,11 +2,20 @@
   <% @theme.drawings.each do |drawing| %>
     <div class="drawing-card">
       <div id="image">
-        <%= cl_image_tag drawing.photo.key, height: 320, width: 450 %>
+        <% if @theme.name == "Notebooks" %>
+          <%= cl_image_tag drawing.photo.key, height: 320, width: 450 %>
+        <% else %>
+          <% if drawing.title == "Crisscross" || drawing.title == "Le bouquet" ||
+            drawing.title == "Les baies vitrées" || drawing.title == "The Long Goodbye" || drawing.title == "Une ville" %>
+            <%= cl_image_tag drawing.photo.key, height: 640 %>
+          <% else %>
+            <%= cl_image_tag drawing.photo.key, height: 320 %>
+          <% end %>
+        <% end %>
       </div>
-      <!-- <div class="title">
-        <p><%= drawing.title %>, <%= drawing.date %></p>
-      </div> -->
+    <div class="title">
+      <p><%= drawing.title %>, <%= drawing.date %></p>
+    </div>
     </div>
   <% end %>
 </div>
