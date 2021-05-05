@@ -33,6 +33,10 @@ cascade_cities = Drawing.create(title: "Cascade Cities", date: 2019, theme_id: t
 notebook1 = File.open('app/assets/images/cascade_cities.jpg')
 cascade_cities.photo.attach(io: notebook1, filename: 'notebook.png', content_type: 'image/png')
 
+maps_rivers = Drawing.create(title: "Maps & Rivers", date: 2020, theme_id: theme1.id)
+notebook7 = File.open('app/assets/images/maps_&_rivers.jpg')
+maps_rivers.photo.attach(io: notebook7, filename: 'notebook.png', content_type: 'image/png')
+
 cinq_sur_cinq = Drawing.create(title: "Cinq sur Cinq", date: 2021, theme_id: theme1.id)
 notebook2 = File.open('app/assets/images/cinq_sur_cinq.jpg')
 cinq_sur_cinq.photo.attach(io: notebook2, filename: 'notebook.png', content_type: 'image/png')
@@ -52,10 +56,6 @@ le_cinquieme_element.photo.attach(io: notebook5, filename: 'notebook.png', conte
 le_vieil_amour = Drawing.create(title: "Le vieil amour", date: 2016, theme_id: theme1.id)
 notebook6 = File.open('app/assets/images/le_vieil_amour.jpg')
 le_vieil_amour.photo.attach(io: notebook6, filename: 'notebook.png', content_type: 'image/png')
-
-maps_rivers = Drawing.create(title: "Maps & Rivers", date: 2020, theme_id: theme1.id)
-notebook7 = File.open('app/assets/images/maps_&_rivers.jpg')
-maps_rivers.photo.attach(io: notebook7, filename: 'notebook.png', content_type: 'image/png')
 
 medusa_perseus = Drawing.create(title: "Medusa vs. Perseus", date: 2021, theme_id: theme1.id)
 notebook8 = File.open('app/assets/images/medusa_vs_perseus.jpg')
@@ -90,15 +90,6 @@ notebook15 = File.open('app/assets/images/les_profondeurs.jpg')
 les_profondeurs.photo.attach(io: notebook15, filename: 'notebook.png', content_type: 'image/png')
 
 #-------------------illustrations---------------------------------#
-
-crisscross = Drawing.create(title: "Crisscross", date: 2021, theme_id: theme2.id)
-illu2 = File.open('app/assets/images/crisscross.jpg')
-crisscross.photo.attach(io: illu2, filename: 'notebook.png', content_type: 'image/png')
-
-bouquet = Drawing.create(title: "Le bouquet", date: 2015, theme_id: theme2.id)
-illu4 = File.open('app/assets/images/le_bouquet.jpg')
-bouquet.photo.attach(io: illu4, filename: 'notebook.png', content_type: 'image/png')
-
 alice = Drawing.create(title: "Alice", date: 2015, theme_id: theme2.id)
 illu1 = File.open('app/assets/images/alice.jpg')
 alice.photo.attach(io: illu1, filename: 'notebook.png', content_type: 'image/png')
@@ -107,13 +98,13 @@ geometrie = Drawing.create(title: "Géométrie", date: 2016, theme_id: theme2.id
 illu3 = File.open('app/assets/images/geometrie.jpg')
 geometrie.photo.attach(io: illu3, filename: 'notebook.png', content_type: 'image/png')
 
+up_and_down = Drawing.create(title: "Up and down", date: 2021, theme_id: theme2.id)
+illu11 = File.open('app/assets/images/up_and_down.jpg')
+up_and_down.photo.attach(io: illu11, filename: 'notebook.png', content_type: 'image/png')
+
 enfer = Drawing.create(title: "L'Enfer", date: 2016, theme_id: theme2.id)
 illu5 = File.open('app/assets/images/enfer.jpg')
 enfer.photo.attach(io: illu5, filename: 'notebook.png', content_type: 'image/png')
-
-baies_vitrees = Drawing.create(title: "Les baies vitrées", date: 2021, theme_id: theme2.id)
-illu6 = File.open('app/assets/images/les_baies_vitrees.jpg')
-baies_vitrees.photo.attach(io: illu6, filename: 'notebook.png', content_type: 'image/png')
 
 ivresse = Drawing.create(title: "L'ivresse du pouvoir", date: 2016, theme_id: theme2.id)
 illu7 = File.open('app/assets/images/ivresse_du_pouvoir.jpg')
@@ -123,6 +114,18 @@ metropolis = Drawing.create(title: "Metropolis", date: 2016, theme_id: theme2.id
 illu8 = File.open('app/assets/images/metropolis.jpg')
 metropolis.photo.attach(io: illu8, filename: 'notebook.png', content_type: 'image/png')
 
+crisscross = Drawing.create(title: "Crisscross", date: 2021, theme_id: theme2.id)
+illu2 = File.open('app/assets/images/crisscross.jpg')
+crisscross.photo.attach(io: illu2, filename: 'notebook.png', content_type: 'image/png')
+
+bouquet = Drawing.create(title: "Le bouquet", date: 2015, theme_id: theme2.id)
+illu4 = File.open('app/assets/images/le_bouquet.jpg')
+bouquet.photo.attach(io: illu4, filename: 'notebook.png', content_type: 'image/png')
+
+baies_vitrees = Drawing.create(title: "Les baies vitrées", date: 2021, theme_id: theme2.id)
+illu6 = File.open('app/assets/images/les_baies_vitrees.jpg')
+baies_vitrees.photo.attach(io: illu6, filename: 'notebook.png', content_type: 'image/png')
+
 goodbye = Drawing.create(title: "The Long Goodbye", date: 2021, theme_id: theme2.id)
 illu9 = File.open('app/assets/images/the_long_goodbye.jpg')
 goodbye.photo.attach(io: illu9, filename: 'notebook.png', content_type: 'image/png')
@@ -130,10 +133,6 @@ goodbye.photo.attach(io: illu9, filename: 'notebook.png', content_type: 'image/p
 ville = Drawing.create(title: "Une ville", date: 2021, theme_id: theme2.id)
 illu10 = File.open('app/assets/images/une_ville.jpg')
 ville.photo.attach(io: illu10, filename: 'notebook.png', content_type: 'image/png')
-
-up_and_down = Drawing.create(title: "Up and down", date: 2021, theme_id: theme2.id)
-illu11 = File.open('app/assets/images/up_and_down.jpg')
-up_and_down.photo.attach(io: illu11, filename: 'notebook.png', content_type: 'image/png')
 
 puts "#{Drawing.all.length} drawings created"
 
