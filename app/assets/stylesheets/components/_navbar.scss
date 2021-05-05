@@ -1,12 +1,20 @@
-.navbar {
-  padding: 40px 20px;
-  margin-bottom: 50px;
-  color: #e5989b;
-}
-
 .header {
   display: flex;
   justify-content: space-around;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #e5989b;
+  align-items: center;
+}
+
+.navbar-lewagon {
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.navbar-collapse {
+  text-align: center;
 }
 
 h1 {

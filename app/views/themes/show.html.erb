@@ -1,12 +1,12 @@
  <div class="drawing-cards">
   <% @theme.drawings.each do |drawing| %>
     <div class="drawing-card">
-      <div class="image">
-        <%= cl_image_tag drawing.photo.key %>
+      <div id="image">
+        <%= cl_image_tag drawing.photo.key, height: 320, width: 450 %>
       </div>
-      <div class="title">
+      <!-- <div class="title">
         <p><%= drawing.title %>, <%= drawing.date %></p>
-      </div>
+      </div> -->
     </div>
   <% end %>
 </div>
