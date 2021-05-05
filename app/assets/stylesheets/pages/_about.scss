@@ -1,0 +1,20 @@
+.about {
+  margin: 0 200px;
+}
+
+.about-info {
+  margin-bottom: 50px;
+  text-align: justify;
+  line-height: 6vh;
+}
+
+.about-info a {
+  font-weight: bold;
+  color: purple;
+  text-decoration: none;
+  opacity: 1;
+}
+
+.about-info a:hover {
+  opacity: 0.5;
+}
