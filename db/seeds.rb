@@ -17,7 +17,7 @@ puts 'Destroying Themes'
 puts 'Creating themes'
 
 theme1 = Theme.create(name: "Notebooks")
-file1 = File.open('app/assets/images/metropolis_blueprint.jpg')
+file1 = URI.open('https://res.cloudinary.com/dqv63knpl/image/upload/v1619801976/29qej5cm2hszrg4h3duk1u6oqfe7.jpg')
 theme1.photo.attach(io: file1, filename: 'nes.png', content_type: 'image/png')
 
 theme2 = Theme.create(name: "Illustrations")
