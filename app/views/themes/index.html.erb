@@ -1,13 +1,10 @@
 <div class="theme-cards">
   <% @themes.each do |theme| %>
-    <div class="theme-card">
-      <div id="card-image">
-        <%= link_to (cl_image_tag theme.photo.key, height: 300, width: 450), theme_path(theme) %>
-      </div>
-      <div class="card-title">
-         <%= theme.name.upcase %>
-      </div>
-    </div>
+      <%= link_to theme_path(theme) do %>
+        <div class="theme-card" style="background-image: linear-gradient(rgb(0 0 0 / 0.2), rgb(0 0 0 / 0.2)), url('<%= cl_image_path theme.photo.key %>')">
+          <%= theme.name.upcase %>
+        </div>
+      <% end %>
   <% end %>
 </div>
 

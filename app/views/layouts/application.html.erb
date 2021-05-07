@@ -12,24 +12,30 @@
   </head>
 
   <body>
-    <%= render 'shared/navbar' %>
-      <div class="main-content">
-        <%= yield %>
-      </div>
-
-
-    <%= render 'shared/footer' %>
+    <div class="main-content">
+      <%= render 'shared/navbar' %>
+        <div class="main-page">
+          <%= yield %>
+        </div>
+      <%= render 'shared/footer' %>
+    </div>
   </body>
 </html>
 
 <style>
 
-.main-content {
-  margin: 0 120px;
+.main-page {
+  padding-bottom: 280px;
+  margin: 0 140px;
 }
 
 body {
   background-color: #fffffc;
+}
+
+.main-content {
+  position: relative;
+  min-height: 100vh;
 }
 
 </style>
