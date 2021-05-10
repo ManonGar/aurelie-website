@@ -3,7 +3,7 @@
     <div class="drawing-card">
       <div id="image">
         <% if @theme.name == "Notebooks" %>
-          <%= cl_image_tag drawing.photo.key %>
+          <%= cl_image_tag drawing.photo.key, height: 300 %>
         <% else %>
           <% if drawing.title == "Crisscross" || drawing.title == "Le bouquet" ||
             drawing.title == "Les baies vitrées" || drawing.title == "The Long Goodbye" || drawing.title == "Une ville" %>
