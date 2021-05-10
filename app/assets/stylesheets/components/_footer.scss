@@ -1,7 +1,6 @@
 .footer {
   background-color: #ffe5d9;
   text-align: center;
-  // height: 140px;
   padding: 10px 50px;
   position: absolute;
   bottom: 0;
@@ -17,6 +16,9 @@
 
 #copyright {
   color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: end;
 }
 
 .fab:hover {
