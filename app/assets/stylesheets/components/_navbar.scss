@@ -9,14 +9,11 @@
 }
 
 .navbar-lewagon {
-  justify-content: space-between;
   margin-bottom: 80px;
   font-weight: bold;
   font-size: 20px;
-}
-
-.navbar-collapse {
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 h1 {

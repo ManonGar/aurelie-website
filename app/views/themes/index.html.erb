@@ -1,8 +1,8 @@
 <div class="theme-cards">
   <% @themes.each do |theme| %>
       <%= link_to theme_path(theme) do %>
-        <div class="theme-card" style="background-image: linear-gradient(rgb(0 0 0 / 0.2), rgb(0 0 0 / 0.2)), url('<%= cl_image_path theme.photo.key %>')">
-          <%= theme.name.upcase %>
+        <div class="theme-card hover" style="background-image: linear-gradient(rgb(0 0 0 / 0.2), rgb(0 0 0 / 0.2)), url('<%= cl_image_path theme.photo.key %>')">
+        <%= theme.name.upcase %>
         </div>
       <% end %>
   <% end %>

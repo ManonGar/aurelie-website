@@ -19,7 +19,6 @@
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  transition: opacity 0.3s ease;
 }
 
 .theme-cards a {
@@ -27,9 +26,11 @@
   opacity: 1;
 }
 
-.theme-cards a:hover {
- opacity: 0.8;
-}
+// .hover {
+//   background: pink;
+//   opacity: 0.8;
+//   transition: opacity 0.3s ease-in-out;
+// }
 
 .fab {
   text-decoration: none;
