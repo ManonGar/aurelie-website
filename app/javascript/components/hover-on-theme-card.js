@@ -1,9 +1,9 @@
 const hover = () => {
   // const themeCards = document.querySelectorAll(".theme-card");
-  // console.log(hover);
+  // console.log(themeCards);
   // themeCards.forEach((themeCard) => {
   //   themeCard.addEventListener("mouseover", (event) => {
-  //     themeCard.classList.add("hover");
+  //     themeCard.style.color = "red";
   //   });
   // });
 }
